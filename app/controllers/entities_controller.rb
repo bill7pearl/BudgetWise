@@ -9,11 +9,12 @@ class EntitiesController < ApplicationController
   def index
     @entities = Entity.all
     @category = Category.find(params[:category_id])
+    @total = @category.entities.sum(:amount)
   end
 
   def create
     params = entity_params
-    @entity = Entity.new(params)
+    @entity = Entity.create(entity_params)
     @entity.author = current_user
     @categories_ids = params[:categories_ids]
 

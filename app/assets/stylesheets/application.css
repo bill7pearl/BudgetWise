@@ -237,3 +237,32 @@ span {
   text-decoration: none;
   text-align: center;
 }
+
+.add-transactions-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.categories {
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+}
+
+.checkboxes {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  gap: 5px;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}

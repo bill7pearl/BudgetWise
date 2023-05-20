@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :users
 
   resources :categories, only: [:index, :new, :create, :destroy] do
     resources :entities, only: [:index, :new, :create, :destroy]
