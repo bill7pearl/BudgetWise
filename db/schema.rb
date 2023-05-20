@@ -30,11 +30,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_19_150413) do
     t.index ["entity_id", "category_id"], name: "index_categories_entities_on_entity_id_and_category_id"
   end
 
-  create_table "category_transactions", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "entities", force: :cascade do |t|
     t.string "name"
     t.decimal "amount"
