@@ -1,0 +1,33 @@
+<%= render "shared/back" %>
+<main class="add-transactions-container">
+    <h3>Add new Transactions</h3>
+
+    <%= form_with(model: @entity, url: category_entities_path, method: :post) do |f| %>
+
+        <div>
+            <%= f.text_field :name, placeholder: 'Enter Transaction name' %>
+        </div>
+
+        <div>
+            <%= f.number_field :amount, step: 1, placeholder: 'How much did you spend' %>
+        </div>
+
+        <% if @categories %>
+        <div class="checkboxes-container">
+            <%= f.label :categories, class: 'categories' %>
+            <%= f.collection_check_boxes(:category_ids, @categories, :id, :name) do |b| %>
+                <div class="checkboxes">
+                <div>
+                <%= b.check_box %>
+                </div>
+                <div>
+                <%= b.label %>
+                </div>
+                </div>
+            <% end %>
+        </div>
+        <% end %>
+            <%= f.submit 'Save', class: 'add-transaction-btn' %>
+
+    <% end %>
+</main>

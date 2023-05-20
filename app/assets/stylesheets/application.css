@@ -13,3 +13,256 @@
  *= require_tree .
  *= require_self
  */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.splash-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.signs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.login-link {
+  text-decoration: none;
+  color: white;
+  background-color: #3778c2;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.signup-link {
+  text-decoration: none;
+  color: #434b54;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.login-container {
+  width: 100%;
+}
+
+.login-session-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3778c2;
+  padding: 0 5px;
+}
+
+.back-btn {
+  align-self: center;
+}
+
+.login-session {
+  text-align: center;
+  color: white;
+  padding: 0.5rem;
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.field,
+input {
+  width: 99%;
+  margin: 0;
+  padding: 0.5rem 0;
+  border: 1px solid #434b54;
+}
+
+.forgot-pass {
+  text-decoration: none;
+  color: #434b54;
+  margin-top: 5px;
+}
+
+.categories-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories-title {
+  align-self: center;
+  text-align: center;
+  color: white;
+  background-color: #3778c2;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.categories-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.category {
+  display: flex;
+  width: 99%;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: rgb(218, 218, 218);
+}
+
+.category-img {
+  width: 40px;
+  height: 40px;
+}
+
+.category-details {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category-name {
+  text-decoration: none;
+  font-size: large;
+  color: #434b54;
+}
+
+span {
+  color: #434b54;
+  font-size: small;
+}
+
+.category-amount {
+  width: 20%;
+}
+
+.add-btn {
+  background-color: #5fb523;
+  color: white;
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  width: 98%;
+}
+
+.add-btn-container {
+  background-color: #5fb523;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  padding: 3px;
+}
+
+.save-btn-container {
+  background-color: #5fb523;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  height: 37px;
+  padding: 2px;
+}
+
+.new-category-nav {
+  display: flex;
+  background-color: #3778c2;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.new-category-title {
+  color: white;
+}
+
+.transactions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.total-transactions {
+  display: flex;
+  gap: 10px;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+.transactions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.transaction {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem;
+  background-color: rgb(221, 221, 221);
+}
+
+.add-transaction-btn {
+  background-color: #5fb523;
+  color: white;
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.add-transactions-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.categories {
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+}
+
+.checkboxes {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  gap: 5px;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}

@@ -1,0 +1,14 @@
+<section class="login-container">
+<div class="login-session-nav">
+<%= render "shared/back" %>
+<h4 class="login-session">Log In</h4>
+</div>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password" %>
+    <%= f.submit "Log in" %>
+    <%= render "devise/shared/links" %>
+  </div>
+<% end %>
+</section>

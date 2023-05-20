@@ -1,0 +1,33 @@
+<main class="categories-container">
+    <h2 class="categories-title">Categories</h2>
+    <% if @categories.empty? %>
+     <div class="empty-category">
+        <h3>You don't have any categories yet!</h3>
+        <%= link_to 'Add Category', new_category_path %>
+     </div>
+    <% else %>
+        <div class="categories-card">
+            <% @categories.each do |category| %>
+            <div class="category">
+                <img src="<%= category.icon %>" alt="category icon" class="category-img" >
+                <div class="category-details">
+                
+                        <%= link_to category.name, category_entities_path(category), class: 'category-name' %>
+                    
+                    <span>
+                        <%= category.created_at.strftime("%d %b %Y") %>
+                    </span>
+                </div>
+                <div class="category-amount">
+                        <Span>
+                            $<%= category.entities.inject(0) { |sum, e| sum += e.amount  }%> 
+                        </Span>
+                    </div>
+            </div>
+            <% end %>
+            <div class="add-btn-container">
+            <%= link_to 'Add Category', new_category_path, class: 'add-btn' %>
+            </div>
+        </div>
+    <% end %>
+</main>

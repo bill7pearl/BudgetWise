@@ -1,0 +1,20 @@
+<main>
+<div class="new-category-nav">
+<%= render "shared/back" %>
+<h3 class="new-category-title">New Category</h3>
+</div>
+
+<%= form_with(model: Category, url: categories_path, method: :post) do |f| %>
+
+    <div class="field">
+        <%= f.text_field :name, placeholder: 'Enter category name' %>
+    </div>
+
+    <div class="field">
+        <%= f.text_field :icon, placeholder: 'Paste icon url'%>
+    </div>
+    <div class="save-btn-container">
+    <%= f.submit 'Save', class: 'add-btn' %> <br>
+    </div>
+<% end %>
+</main>
