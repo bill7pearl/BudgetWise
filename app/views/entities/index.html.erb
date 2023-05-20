@@ -21,7 +21,7 @@
         <% @entities.each do |entity| %>
             <div class="transaction">
                     <%= image_tag(@category.icon || '', class: "category-img") %>
-                <div class="transacts-name-div">
+                <div>
                     <h2>
                         <%= entity.name %>
                     </h2>
@@ -29,7 +29,7 @@
                         <%= entity.created_at.strftime("%d %b %Y") %>
                     </span>
                 </div>
-                <div  class="transacts-total-amount">
+                <div>
                     <Span>
                         $<%= entity.amount %> 
                     </Span>

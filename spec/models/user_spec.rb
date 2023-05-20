@@ -4,10 +4,10 @@ RSpec.describe User, type: :model do
   describe 'validations' do
     let(:user) { User.new(name: 'John Doe', email: 'john@example.com', password: 'password') }
 
-    it "is invalid without a name" do
-        user = User.new(email: "alice@example.com")
-        expect(user).to be_invalid
-      end      
+    it 'is invalid without a name' do
+      user = User.new(email: 'alice@example.com')
+      expect(user).to be_invalid
+    end
 
     it 'is invalid without an email' do
       user.email = nil
