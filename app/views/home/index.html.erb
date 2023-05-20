@@ -2,10 +2,8 @@
     <div class="logo-container">
      <h1 class="logo">BudgetWise</h1>
     </div>
-    <div class="signs-container">
-     <ul class="signs">
-     <li class="logn-in"><%= link_to 'Log-In',  new_user_session_path %></li>
-     <li class="sign-up"><%= link_to 'Sign-Up', new_user_registration_path %></li>
-     </ul>
-    </div>
+     <div class="signs-container">
+      <%= link_to 'LOG IN',  new_user_session_path, class: 'login-link' %>
+      <%= link_to 'SIGN UP', new_user_registration_path, class: 'signup-link' %>
+     </div>
   </section>
