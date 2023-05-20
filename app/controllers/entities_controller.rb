@@ -41,7 +41,7 @@ class EntitiesController < ApplicationController
 
     if @general.nil?
       @general = Category.create(name: 'General',
-                                 icon: 'test.jpg', author: current_user)
+                                 icon: 'https://icons8.com/icon/SUtMjRvQFq1J/exchange', author: current_user)
     end
 
     @general
